@@ -1,0 +1,5 @@
+main: net.endlight.hubcmd.Main
+name: HubCommand
+version: "1.0.1"
+api: ["1.0.0"]
+author: LYEmerald

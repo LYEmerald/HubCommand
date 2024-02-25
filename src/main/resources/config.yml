@@ -1,0 +1,41 @@
+OneServerMode: true
+# 插件模式
+# 填true为单服传送模式(teleport模式)
+# 填false为跨服传送模式(transfer模式)
+
+transfer:
+  ip: 127.0.0.1
+  port: 19132
+# 跨服的IP(域名)和端口
+# 仅在transfer模式下有效
+
+teleport:
+  position: "0:70:0:world"
+# 主城的坐标
+# 仅在teleport模式下有效
+
+GameWorld:
+  - gameWorld1
+
+gameWorld1:
+  - bw quit
+# 如果你是小游戏服的用户，并且不想让玩家从游戏地图直接传送回主城，可使用此功能
+# 执行回城命令时让玩家执行退出游戏命令
+# 在GameWorld中添加小游戏的地图名称
+# 并仿照上面gameWorld1这样配置即可
+# 仅在teleport模式下有效
+
+HubWhenQuit: true
+# 若玩家执行退出命令后仍要进行传送操作，可启用此功能
+
+HubWhenJoin: true
+# 当玩家加入时传送回主城
+
+DelayTime: 20
+# 加入时直接传送可能会传送失败
+# 通过更改此处来调节延迟时间
+
+HubMessage:
+  - "正在将您传送至主大厅"
+# 回城时向玩家发送一条消息
+# teleport和transfer模式下均有效
